@@ -1,4 +1,85 @@
 <!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Téléchargement de fichier SNA</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <!--[if lt IE 9]><script type='text/javascript' src='assets/javascript/html5.js'></script><![endif]-->
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'></script>
+    <script type='text/javascript' src='assets/javascript/prettify.js'></script>
+    <script type='text/javascript' src='assets/javascript/bootstrap-collapse.js'></script>
+    <link rel='stylesheet' type='text/css' href='assets/css/style.css' />
+    <link rel='stylesheet' type='text/css' href='assets/css/bootstrap.css' />
+    <link rel='stylesheet' type='text/css' href='assets/css/prettify.css' />
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-dark bg-inverse">
+      <a class="navbar-brand" href="#">SNA</a>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Téléchargement de fichier SNA des communes nouvelles</h1>
+        <p class="lead">Ce service permet de télécharger des fichiers depuis le portail <a href="http://developer.laposte.fr">http://developer.laposte.fr</a></p>
+      </div>
+
+    </div><!-- /.container -->
+
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="x-okapi-key">Clef de sécurité (X-Okapi-Key)</label>
+          <input type="text" class="form-control" id="x-okapi-key" placeholder="Ex : zchl9IRQIeGObF+kw+s4nD4h+d6pJKqgGMwJtT7KFJs/sGa4p1ljEh8hU1zwNcaV">
+          <small id="emailHelp" class="form-text text-muted">Cette clef vous a été fournie lors de la contractualisation</small>
+        </div>
+
+          <legend>Format de fichier à récupérer</legend>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="application/csv" checked>
+              CSV (Compatible Excel)
+            </label>
+          </div>
+          <div class="form-check">
+          <label class="form-check-label">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="application/json">
+              Json
+            </label>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn btn-primary">Récuperer le fichier</button>
+      </form>
+
+    </div><!-- /.container -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
 <html lang='fr'>
 	<head>
 		<title>Téléchargement de fichier SNA</title>
@@ -33,29 +114,7 @@
   			</p>
   			<h2>Téléchargement du fichier des communes nouvelles</h2>
 
-        <form>
-          <div class="form-group">
-            <label for="x-okapi-key">Clef de sécurité (X-Okapi-Key)</label>
-            <input type="text" class="form-control" id="x-okapi-key" placeholder="Ex : zchl9IRQIeGObF+kw+s4nD4h+d6pJKqgGMwJtT7KFJs/sGa4p1ljEh8hU1zwNcaV">
-            <small id="emailHelp" class="form-text text-muted">Cette clef vous a été fournie lors de la contractualisation</small>
-          </div>
 
-            <legend>Format de fichier à récupérer</legend>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="application/csv" checked>
-                CSV (Compatible Excel)
-              </label>
-            </div>
-            <div class="form-check">
-            <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="application/json">
-                Json
-              </label>
-            </div>
-          </fieldset>
-          <button type="submit" class="btn btn-primary">Récuperer le fichier</button>
-        </form>
       </div>
     </div>
   </body>
